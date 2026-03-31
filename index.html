@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
+<html lang="en-US">
+
+<head>
 
 <link rel="canonical" href="https://vid30.fr">
 
@@ -13,18 +14,67 @@
   "@type": "Organization",
   "name": "Vid30",
   "url": "https://vid30.fr",
-  "description": "Streaming platform for AI generated films",
-  "sameAs": []
+  "logo": "https://vid30.fr/assets/img/logo.png",
+  "description": "The streaming platform for AI generated films. Discover, create and monetize AI cinema on Smart TVs.",
+  "foundingDate": "2025",
+  "founder": {
+    "@type": "Person",
+    "name": "Your Name"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "FR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+33630001516",
+    "contactType": "Customer Service",
+    "areaServed": "FR",
+    "availableLanguage": "en"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/vid30/"
+  ]
 }
 </script>
+
+<!-- Ajouter aussi WebApplication schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Vid30",
+  "url": "https://vid30.fr",
+  "applicationCategory": "EntertainmentApplication",
+  "operatingSystem": "Smart TV, VIDAA OS",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "description": "Stream AI-generated films on Smart TVs"
+}
+</script>
+
 
 <meta charset="utf-8">
 
 <title>Vid30 — The Streaming Platform for AI Generated Films</title>
 
 <meta name="description" content="Vid30 is the streaming platform for AI generated films. Discover, create and monetize AI cinema on Smart TVs.">
-<meta name="keywords" content="AI video platform, AI cinema, AI generated films, AI streaming platform, Vid30, Smart Tvs, Videos, Movies, TV Shows, AI content, AI video creation, AI video editing, AI video distribution, AI video monetization">
+<!-- ✅ AMÉLIORATION -->
 <!-- <meta name="author" content="Vid30"> -->
+<meta name="author" content="Jay-Y Nadal, Founder of Vid30">
+<meta name="theme-color" content="#000000">
+
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@vid30">
+<meta name="twitter:title" content="Vid30 — The Streaming Platform for AI Cinema">
+<meta name="twitter:description" content="Discover, create and monetize AI generated films.">
+<meta name="twitter:image" content="https://vid30.fr/assets/img/og-image.jpg">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,11 +83,36 @@
 <meta property="og:description" content="Discover, create and monetize AI generated films.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vid30.fr">
+<meta property="og:image" content="https://vid30.fr/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Vid30">
+<meta property="og:locale" content="en_US">
 
 <link href="assets/css/plugins.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Oswald:300,400,700" rel="stylesheet">
+<!-- ✅ AMÉLIORATION - Préchargement + async -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet"></noscript>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    'anonymize_ip': true, // RGPD compliance
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+
+<!-- Cloudflare Web Analytics (alternative privacy-friendly) -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "your-token"}'></script>
+
 </head>
 
     <body>
@@ -99,9 +174,11 @@
                 <!-- left 1 start -->
                 <div class="ms-section" id="left-1">
                     <!-- logo start -->
-                    <a class="logo left-position">
-                    <div class="logo-img"></div>
-                    </a><!-- logo end -->
+
+<a class="logo left-position">
+    <div alt="Vid30 Logo" class="logo-img"></div>
+</a>
+                    <!-- logo end -->
                     <!-- bg IMG start -->
                     <div class="overlay overlay-all overlay-dark-75 cover-all" id="left-bg-1"></div><!-- bg IMG end -->
                     <!-- content wrapper start -->
@@ -112,20 +189,21 @@
                             <div class="social-icons">
                                 <!-- social icons start -->
                                 <ul>
-                                    <li>
+                                    <!-- <li>
                                         <a class="ion-social-twitter" href="#"><span>Twitter</span></a>
                                     </li>
                                     <li>
                                         <a class="ion-social-facebook" href="#"><span>Facebook</span></a>
-                                    </li>
+                                    </li> -->
                                     <li>
-                                        <a class="ion-social-instagram" href="#"><span>Instagram</span></a>
+                                        <a class="ion-social-linkedin" target="_blank" href="https://www.linkedin.com/company/vid30/"><span>Linkedin</span></a>
                                     </li>
                                 </ul><!-- social icons end -->
                             </div><!-- section TXT end -->
                             <!-- divider start -->
                             <div class="inner-divider-half"></div><!-- divider end -->
                             <!-- section title start -->
+                             
                             <h1 class="hero-heading">
                                 <i class="hero-heading-xs">AI-Native Cinema</i><br>
                                 <span>Vid</span>30
@@ -255,24 +333,36 @@ Exploring new cinematic formats.
                                 <!-- countdown start -->
                                 <div class="countdown-content">
                                     <!-- section title start -->
-                                     <script>
-const launchDate = new Date("June 11, 2026 09:00:00").getTime();
 
-const countdown = setInterval(() => {
+<!-- // ✅ AMÉLIORATION -->
+<span class="days hero-heading hero-heading-countdown" id="countdown-days">
+    <noscript>35 </noscript> 
+</span> <span class="timeRefDays hero-heading hero-heading-countdown"> Days</span>
+
+<script>
+const launchDate = new Date("2026-06-11T09:00:00+02:00").getTime(); // ISO format avec timezone
+
+const updateCountdown = () => {
   const now = new Date().getTime();
   const distance = launchDate - now;
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-  document.querySelector(".days").innerHTML = days;
-
+  const daysElement = document.getElementById('countdown-days');
+  
   if (distance < 0) {
-    clearInterval(countdown);
-    document.querySelector(".days").innerHTML = "LIVE";
+    daysElement.textContent = "LIVE";
+    return;
   }
-}, 1000);
+  
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  daysElement.textContent = days;
+};
+
+// Initialisation immédiate
+updateCountdown();
+// Puis mise à jour toutes les heures (pas besoin de chaque seconde pour des jours)
+setInterval(updateCountdown, 3600000);
 </script>
-                                    <span class="days hero-heading hero-heading-countdown">35</span> <span class="timeRefDays hero-heading hero-heading-countdown">Days</span> 
+
+
                                     <!-- section title end -->
                                 </div><!-- countdown end -->
                                 <!-- divider start -->
@@ -287,21 +377,57 @@ const countdown = setInterval(() => {
                                 <div id="subscribe-wrapper">
                                     <div id="newsletter">
                                         <div class="newsletter">
-                                            <form id="subscribe" name="subscribe" method="POST" data-netlify="true">
+                                            <!-- <form id="subscribe" name="subscribe" method="POST" data-netlify="true"> -->
+
+                                            
+<!-- ✅ AMÉLIORATION -->
+<form id="subscribe" 
+      name="subscribe" 
+      method="POST" 
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      netlify>
+  
+  <!-- Honeypot anti-spam -->
+  <p class="hidden">
+    <label>Don't fill this out: <input name="bot-field" /></label>
+  </p>
+  
+  <input type="hidden" name="form-name" value="subscribe" />
+  
+  <input class="subscribe-email" 
+         id="subscribe-email" 
+         name="email" 
+         placeholder="Enter your email to access AI Cinema first" 
+         type="email" 
+         required
+         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+         aria-label="Email address for early access">
+  
+  <button type="submit" class="the-button" aria-label="Subscribe to early access">
+    <span>Get Early Access</span>
+  </button>
+</form>
+
+<style>
+.hidden { display: none; }
+</style>
     
-    <input type="hidden" name="form-name" value="subscribe" />
+    <!-- <input type="hidden" name="form-name" value="subscribe" /> -->
 
-    <p style="color:white;">
+    <!-- <p style="color:white;">
         Be among the first to experience AI cinema.
-    </p>
+    </p> -->
 
-    <input class="subscribe-requiredField subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="Enter your email to access AI Cinema first" type="email" required> 
+    <!-- <input class="subscribe-requiredField subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="Enter your email to access AI Cinema first" type="email" required> 
     
     <div class="newsletter-form-submit-wrapper">
         <button class="the-button the-button-contact the-button-submit" id="submit-2" type="submit">
             <span>Get Early Access</span>
         </button>
-    </div></form>
+    </div> -->
+
+</form>
                                         </div>
                                     </div>
                                 </div><!-- newsletter form end -->
