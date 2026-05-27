@@ -262,23 +262,27 @@ $(function () {
 
   // 7. countdown
   // countdown setup start
-  $('#countdown').countdown(
-    {
-      date: '01 January 2025 12:00:00', // countdown target date settings
-      format: 'off',
-    },
-    function () {}
-  );
+  if ($.fn.countdown) {
+    $('#countdown').countdown(
+      {
+        date: '11 June 2026 09:00:00', // countdown target date settings
+        format: 'off',
+      },
+      function () {}
+    );
+  }
 
   // 7bis. storage
   // storage setup start
-  $('#storage').storage(
-    {
-      nbrMovie: '1800', // storage target date settings
-      format: 'off',
-    },
-    function () {}
-  );
+  if ($.fn.storage && $('#storage').length) {
+    $('#storage').storage(
+      {
+        nbrMovie: '1800', // storage target date settings
+        format: 'off',
+      },
+      function () {}
+    );
+  }
 
   // 8. menu
   // menu button
@@ -380,6 +384,10 @@ $(function () {
     return !1;
   });
   $('form#subscribe').on('submit', function () {
+    if ($(this).is('[data-netlify]')) {
+      return true;
+    }
+
     $('form#subscribe .subscribe-error').remove();
     $.post('subscribe.php');
     var s = !1;
